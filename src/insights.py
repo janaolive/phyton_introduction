@@ -5,9 +5,9 @@ def get_unique_job_types(path):
     jobs_data = read(path)
     types_jobs_list = set()
     for job in jobs_data:
-        type_job = job["type_job"]
-        if type_job != "":
-            types_jobs_list.add(type_job)
+        job_type = job["job_type"]
+        if job_type != "":
+            types_jobs_list.add(job_type)
     return [types_jobs_list]
 
 
