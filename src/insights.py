@@ -67,6 +67,7 @@ def matches_salary_range(job, salary):
     else:
         return lower_salary <= salary <= higher_salary
 
+
 def filter_by_salary_range(jobs, salary):
     salary_list = list()
     for job in jobs:
